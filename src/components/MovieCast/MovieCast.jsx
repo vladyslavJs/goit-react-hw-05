@@ -35,38 +35,38 @@ export default function MovieCast() {
     
      return (
     <>
-      {cast.length > 0 ? (
-        <div className={css.container}>
-          {loading && <Loader />}
+         {cast.length > 0 ? (
+           <div className={css.container}>
+             {loading && <Loader />}
 
-          {error && <ErrorMessage  />}
+             {error && <ErrorMessage />}
 
-          {!loading && (
-            <ul className={css.list}>
-              {cast.map(({ id, name, character, profile_path }) => (
-                <li className={css.item} key={id}>
-                  <img
-                    className={css.image}
-                    src={
-                      profile_path
-                        ? `https://image.tmdb.org/t/p/w500${profile_path}`
-                        : defaultImg
-                    }
-                    alt={`${name} photo`}
-                  />
-                  <div>
-                    <p className={css.text}>{name}</p>
-                    <p className={css.text}>
-                      <i>{character}</i>
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      ) : (
-        <p>No information about the cast</p>
+             {!loading && (
+               <ul className={css.list}>
+                 {cast.map(({ id, name, character, profile_path }) => (
+                   <li className={css.item} key={id}>
+                     <img
+                       className={css.image}
+                       src={
+                         profile_path
+                           ? `https://image.tmdb.org/t/p/w500${profile_path}`
+                           : defaultImg
+                       }
+                       alt={`${name} photo`}
+                     />
+                     <div>
+                       <p className={css.text}>{name}</p>
+                       <p className={css.text}>
+                         <i>{character}</i>
+                       </p>
+                     </div>
+                   </li>
+                 ))}
+               </ul>
+             )}
+           </div>
+         ) : (
+           <p className={css.cast}>No information about the cast. Sorry!</p>
       )}
     </>
   );
