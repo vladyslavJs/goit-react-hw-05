@@ -1,12 +1,13 @@
-.container {
+.list {
     display: flex;
+    flex-wrap: wrap;
     width: 1280px;
     margin: 0 auto;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     row-gap: 25px;
-    column-gap: 12px;
+    column-gap: 10px;  
 }
 
 .items {
@@ -21,7 +22,8 @@
 
 .title {
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     padding: 4px;
     font-weight: 500;
 }
+
