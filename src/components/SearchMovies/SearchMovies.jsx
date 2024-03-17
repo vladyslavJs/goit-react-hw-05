@@ -1,4 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
+import css from './SearchMovies.module.css'
+import { FaSearch } from "react-icons/fa";
 
 export default function SearchMovies() {
     const [params, setParams] = useSearchParams();
@@ -17,10 +19,12 @@ export default function SearchMovies() {
     }
 
     return (
-        <div>
+        <div className={css.container}>
             <form onSubmit={hundleSubmit}>
-                <label>
+                <h2 className={css.title}>We`ll help you find a movie <FaSearch /></h2>
+                <label>   
                     <input
+                        className={css.input}
                         type="text"
                         name="search"
                         autoFocus
