@@ -87,7 +87,7 @@ export default function MovieReviews() {
                 </div>
             ) : (
                 <p className={css.reviews}>
-                    Users have not yet written a reviews about this movie 👀
+                    Users have not yet written a reviews about this movie.You can be the first!
                 </p>
             )}
         </>
