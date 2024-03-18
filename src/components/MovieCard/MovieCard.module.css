@@ -1,11 +1,6 @@
 .raiting {
-    font-weight: 500;
-    color: white;
-    background-color: #171717;
-    border-radius: 4px; 
-    max-width: 120px; 
-    padding: 2px;
-    margin-bottom: 2px;
+    font-weight: 600;
+    text-align: end;
 }
 
 .img {

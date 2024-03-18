@@ -34,7 +34,7 @@ export default function HomePage() {
 
     return (
         <div>
-            <h1 className={css.title}>Trending today <ImFire className={css.icon} /></h1>
+            <h1 className={css.title}>Popular movies of our time</h1>
             {loading && <Loader />} 
             {error && <ErrorMessage />}
             

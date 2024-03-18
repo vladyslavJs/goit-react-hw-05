@@ -32,19 +32,12 @@ export default function MovieReviews() {
 
     const defaultImg =
         'https://dl-media.viber.com/10/share/2/long/vibes/icon/image/0x0/95e0/5688fdffb84ff8bed4240bcf3ec5ac81ce591d9fa9558a3a968c630eaba195e0.jpg';
-    
+        
     return (
         <>
+            {loading && <Loader />}
             {reviews.length > 0 ? (
                 <div className={css.container}>
-                    {loading && <Loader />}
-
-                    {error && (
-                        <ErrorMessage>
-                            Something went wrong! Please reload the page 🚩
-                        </ErrorMessage>
-                    )}
-
                     {!loading && (
                         <ul>
                             {reviews.map(
@@ -86,13 +79,17 @@ export default function MovieReviews() {
                     )}
                 </div>
             ) : (
-                <p className={css.reviews}>
-                    Users have not yet written a reviews about this movie.You can be the first!
-                </p>
+                !loading && (
+                    <p className={css.reviews}>
+                        Users have not yet written a reviews about this movie. You can be the first!
+                    </p>
+                )
             )}
+            {error && <ErrorMessage />}
         </>
     );
 }
+    
 
 
 

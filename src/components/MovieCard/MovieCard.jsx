@@ -7,17 +7,16 @@ export default function MovieCard({
         'https://dl-media.viber.com/10/share/2/long/vibes/icon/image/0x0/95e0/5688fdffb84ff8bed4240bcf3ec5ac81ce591d9fa9558a3a968c630eaba195e0.jpg';
     return (
         <div>  
-            <p className={css.raiting}>{Math.floor(vote_average)} / 10 ⭐⭐⭐</p>
             <img
                 src={poster_path
                     ? `https://image.tmdb.org/t/p/w500${poster_path}`
                     : defaultImg
                 }
                 alt={`${title} poster`}
-                width={260}
-                
-                className={css.img}
+                width={300}
+                className={css.img}    
             />
+            <p className={css.raiting}>{Math.floor(vote_average)} / 10 ⭐⭐⭐</p>
         </div>
     );  
 }
