@@ -16,7 +16,7 @@ export default function MovieCard({
                 width={300}
                 className={css.img}    
             />
-            <p className={css.raiting}>{Math.floor(vote_average)} / 10 ⭐⭐⭐</p>
+            <p className={css.raiting}>Raiting: {Math.floor(vote_average)} / 10 ⭐⭐⭐</p>
         </div>
     );  
 }
