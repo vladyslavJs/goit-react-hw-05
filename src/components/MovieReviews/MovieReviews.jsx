@@ -37,7 +37,7 @@ export default function MovieReviews() {
         <>
             {loading && <Loader />}
             {reviews.length > 0 ? (
-                <div className={css.container}>
+                <div className={css.wrapper}>
                     {!loading && (
                         <ul>
                             {reviews.map(

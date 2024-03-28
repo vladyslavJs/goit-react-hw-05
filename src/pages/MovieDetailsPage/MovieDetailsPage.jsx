@@ -62,7 +62,7 @@ export default function MovieDetailsPage() {
           className={css.photo}
         />
         <div className={css.description}>
-          <h1>{movie.title}</h1>
+          <h1 className={css.title}>{movie.title}</h1>
           {movie.tagline && (
             <p>
               <i>{`"${movie.tagline}"`}</i>
@@ -101,9 +101,9 @@ export default function MovieDetailsPage() {
               {movie.release_date}
             </p>
           )}
-
+          
           {!loading && (
-            <nav>
+            <nav className={css.extraPageContainer}>
               <NavLink
                 to="cast"
                 className={css.extraPage}
