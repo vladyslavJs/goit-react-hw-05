@@ -28,7 +28,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
-    white-space: nowrap;
+    white-space: wrap;
     color: #D3D3D3;
 }
 

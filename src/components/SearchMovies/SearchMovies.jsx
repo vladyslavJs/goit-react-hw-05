@@ -21,7 +21,8 @@ export default function SearchMovies() {
     return (
         <div className={css.container}>
             <form onSubmit={hundleSubmit}>
-                <h2 className={css.title}>We`ll help you find a movie <FaSearch /></h2>
+                <h2 className={css.title}>We`ll help you find a movie <FaSearch className={css.icon} /></h2>
+                <p className={css.info}>Here you can find movies of various genres - from action and comedy to drama and science fiction. Our extensive selection of films caters to the tastes of any viewer, regardless of their preferences and mood. Enjoy your viewing experience!</p>
                 <label>   
                     <input
                         className={css.input}

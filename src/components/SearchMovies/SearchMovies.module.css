@@ -1,5 +1,4 @@
 .container {
-    
     text-align: center;
     align-items: center;
     margin: 0 auto;
@@ -7,14 +6,21 @@
 
 .title {
     color: #fff;
-    font-size: 26px;
+    font-size: 36px;
     margin-top: 20px;
     margin-bottom: 12px; 
     margin-top: 55px;  
 }
 
+.info {
+    color: #808080;
+    padding: 0 12px;
+    margin: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
 .input {
-    width: 25vw;
     height: 30px;
     padding: 0 8px;
     border-radius: 4px;
@@ -23,5 +29,16 @@
     font-family: inherit;
     transition: border-color 250ms ease-in;
     margin-bottom: 10px;
+}
+
+.icon {
+    color: #FF4500;
+}
+
+@media screen and (min-width: 767px) {
+    .input {
+        margin-top: 20px;
+        width: 20vw;       
+    } 
 }
 
