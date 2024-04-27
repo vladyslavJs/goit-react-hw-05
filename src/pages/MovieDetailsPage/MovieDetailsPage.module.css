@@ -8,11 +8,10 @@
 
 .container {
     display: flex;
-    padding: 25px;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
     margin: 0 auto;
-    color: #fff;
+    color: #bcbaba;
 }
 
 
@@ -35,6 +34,7 @@
     max-width: 100px;
     border-radius: 8px;
     cursor: pointer;
+
 }
 
 .extraPage:hover {

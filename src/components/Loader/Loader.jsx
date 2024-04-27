@@ -1,19 +1,17 @@
-import { RotatingLines } from 'react-loader-spinner';
+import { ColorRing } from 'react-loader-spinner';
 import css from './Loader.module.css'
 
 export default function Loader() {
     return (
         <div className={css.loader}>
-            <RotatingLines
+            <ColorRing
                 visible={true}
-                height="38"
-                width="38"
-                strokeColor="grey"
-                strokeWidth="5"
-                animationDuration="0.75"
-                ariaLabel="rotating-lines-loading"
+                height="80"
+                width="80"
+                ariaLabel="color-ring-loading"
                 wrapperStyle={{}}
-                wrapperClass=""
+                wrapperClass="color-ring-wrapper"
+                colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
             />
         </div>
     );

@@ -21,14 +21,11 @@
 }
 
 .title {
-    padding: 4px;
     text-align: center;
-    font-size: 16px;
-    font-weight: 600;
+    width: 300px;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 100%;
-    white-space: wrap;
     color: #D3D3D3;
 }
 

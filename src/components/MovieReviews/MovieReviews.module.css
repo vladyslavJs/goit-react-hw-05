@@ -1,9 +1,12 @@
+.container {
+  margin-top: 15px;
+}
+
 .wrapper {
   background-color: #d3d3d3;
   padding: 4px 30px;
   border-radius: 15px;
   justify-content: center;
-  margin: 10px;
 }
 
 .image {
